@@ -1,0 +1,74 @@
+2013-Jul-03 15:28:00,439 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(professor0_.cdprf) as col_0_0_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf limit ?
+2013-Jul-03 15:28:00,593 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-03 15:28:00,607 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_
+2013-Jul-03 15:28:00,640 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-03 15:28:00,650 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-03 15:28:00,727 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc limit ?

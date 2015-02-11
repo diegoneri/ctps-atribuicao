@@ -1,0 +1,496 @@
+2013-Jun-27 04:46:00,255 [main] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jun-27 04:46:00,339 [main] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_0_,
+        categoriap0_.nmcat as nmcat58_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jun-27 04:46:00,341 [main] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jun-27 04:46:00,343 [main] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_0_,
+        categoriap0_.nmcat as nmcat58_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jun-27 04:46:00,346 [main] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jun-27 04:46:00,349 [main] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jun-27 04:46:00,356 [main] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jun-27 04:46:03,630 [main] org.hibernate.SQL 
+  DEBUG 
+    select
+        login0_.nmusuario as nmusuario29_,
+        login0_.nmacesso as nmacesso29_,
+        login0_.nmsenha as nmsenha29_ 
+    from
+        acesso login0_ 
+    where
+        login0_.nmusuario=? 
+        and login0_.nmsenha=? limit ?
+2013-Jun-27 04:46:08,310 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        acesso login0_ 
+    where
+        login0_.nmusuario=? 
+        and login0_.nmsenha=? limit ?
+2013-Jun-27 04:46:16,434 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        acesso login0_ 
+    where
+        login0_.nmusuario=? 
+        and login0_.nmsenha=? limit ?
+2013-Jun-27 04:46:16,439 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        login0_.nmusuario as nmusuario29_,
+        login0_.nmacesso as nmacesso29_,
+        login0_.nmsenha as nmsenha29_ 
+    from
+        acesso login0_ 
+    where
+        login0_.nmusuario=? 
+        and login0_.nmsenha=? limit ?
+2013-Jun-27 04:46:24,083 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_,
+        atribuicao0_.fkdis as fkdis59_,
+        atribuicao0_.fkplv as fkplv59_,
+        atribuicao0_.fkprf as fkprf59_,
+        atribuicao0_.fktat as fktat59_,
+        atribuicao0_.fktur as fktur59_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_,
+        atribuicao0_1_.csdisatr as csdisatr60_,
+        atribuicao0_1_.flatrsub as flatrsub60_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    where
+        atribuicao0_.fktur=? 
+        and atribuicao0_.fkplv=?
+2013-Jun-27 04:46:24,105 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,112 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipoatribu0_.idtat as idtat72_0_,
+        tipoatribu0_.nmtat as nmtat72_0_ 
+    from
+        tat tipoatribu0_ 
+    where
+        tipoatribu0_.idtat=?
+2013-Jun-27 04:46:24,121 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,134 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,145 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,156 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,166 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,187 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,195 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,200 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,207 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,221 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?
+2013-Jun-27 04:46:24,228 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        disciplina0_.cddis as cddis67_2_,
+        disciplina0_.csdis as csdis67_2_,
+        disciplina0_.fkmdl as fkmdl67_2_,
+        disciplina0_.nmdis as nmdis67_2_,
+        disciplina0_.sgdis as sgdis67_2_,
+        disciplina0_1_.csdivdis as csdivdis68_2_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_ 
+    from
+        dis disciplina0_ 
+    left outer join
+        dis_ds disciplina0_1_ 
+            on disciplina0_.cddis=disciplina0_1_.fkdis 
+    inner join
+        eteab01.mdl modulo1_ 
+            on disciplina0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    where
+        disciplina0_.cddis=?

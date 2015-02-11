@@ -1,0 +1,28 @@
+2013-Jul-12 18:08:33,541 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat31_,
+        categoriap0_.nmcat as nmcat31_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:08:41,593 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat31_,
+        categoriap0_.nmcat as nmcat31_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:08:43,674 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat31_,
+        categoriap0_.nmcat as nmcat31_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:08:45,432 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat31_,
+        categoriap0_.nmcat as nmcat31_ 
+    from
+        cat_ds categoriap0_

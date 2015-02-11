@@ -1,0 +1,393 @@
+2013-Jul-12 18:56:19,893 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        periodolet0_.cdplv as cdplv69_,
+        periodolet0_.yrplv as yrplv69_,
+        periodolet0_.dtfimplv as dtfimplv69_,
+        periodolet0_.dtinicioplv as dtinicio4_69_,
+        periodolet0_.smplv as smplv69_,
+        periodolet0_.stplv as stplv69_ 
+    from
+        eteab01.plv periodolet0_ 
+    where
+        periodolet0_.stplv=?
+2013-Jul-12 18:56:20,157 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        turmalist0_.fkplv as fkplv69_4_,
+        turmalist0_.cdtur as cdtur4_,
+        turmalist0_.cdtur as cdtur66_3_,
+        turmalist0_.fkrepalu as fkrepalu66_3_,
+        turmalist0_.fkmdl as fkmdl66_3_,
+        turmalist0_.fkper as fkper66_3_,
+        turmalist0_.fkplv as fkplv66_3_,
+        turmalist0_.sgtur as sgtur66_3_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_,
+        periodo3_.idper as idper64_2_,
+        periodo3_.nmper as nmper64_2_ 
+    from
+        eteab01.tur turmalist0_ 
+    inner join
+        eteab01.mdl modulo1_ 
+            on turmalist0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    inner join
+        eteab01.per periodo3_ 
+            on turmalist0_.fkper=periodo3_.idper 
+    where
+        turmalist0_.fkplv=?
+2013-Jul-12 18:56:20,191 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:56:20,195 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:56:20,201 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:56:20,205 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:56:20,208 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:56:20,212 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:56:20,215 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:56:20,219 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        turmalist0_.fkplv as fkplv69_4_,
+        turmalist0_.cdtur as cdtur4_,
+        turmalist0_.cdtur as cdtur66_3_,
+        turmalist0_.fkrepalu as fkrepalu66_3_,
+        turmalist0_.fkmdl as fkmdl66_3_,
+        turmalist0_.fkper as fkper66_3_,
+        turmalist0_.fkplv as fkplv66_3_,
+        turmalist0_.sgtur as sgtur66_3_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_,
+        periodo3_.idper as idper64_2_,
+        periodo3_.nmper as nmper64_2_ 
+    from
+        eteab01.tur turmalist0_ 
+    inner join
+        eteab01.mdl modulo1_ 
+            on turmalist0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    inner join
+        eteab01.per periodo3_ 
+            on turmalist0_.fkper=periodo3_.idper 
+    where
+        turmalist0_.fkplv=?
+2013-Jul-12 18:56:20,227 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:56:20,998 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:56:21,015 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_0_,
+        categoriap0_.nmcat as nmcat58_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-12 18:56:21,017 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-12 18:56:21,019 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_0_,
+        categoriap0_.nmcat as nmcat58_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-12 18:56:21,022 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-12 18:56:21,026 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-12 18:56:21,034 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:56:22,930 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:56:22,948 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:56:22,949 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat40_,
+        categoriap0_.nmcat as nmcat40_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:56:24,215 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(professor0_.cdprf) as col_0_0_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf limit ?
+2013-Jul-12 18:56:24,221 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:56:24,229 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_
+2013-Jul-12 18:56:24,281 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:56:24,287 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:56:24,352 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc limit ?
+2013-Jul-12 18:56:24,882 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(tipocontra0_.idtpc) as col_0_0_ 
+    from
+        tpc_ds tipocontra0_ limit ?
+2013-Jul-12 18:56:24,883 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_
+2013-Jul-12 18:56:24,968 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_ limit ?
+2013-Jul-12 18:56:40,251 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        acesso login0_ 
+    where
+        login0_.nmusuario=? 
+        and login0_.nmsenha=? limit ?
+2013-Jul-12 18:56:41,213 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(categoriap0_.cdcat) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:56:41,637 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:56:41,796 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:56:41,820 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(tipoatribu0_.idtat) as col_0_0_ 
+    from
+        tat tipoatribu0_ limit ?
+2013-Jul-12 18:56:41,878 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipoatribu0_.idtat as idtat72_,
+        tipoatribu0_.nmtat as nmtat72_ 
+    from
+        tat tipoatribu0_ limit ?

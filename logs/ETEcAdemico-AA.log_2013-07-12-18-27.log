@@ -1,0 +1,85 @@
+2013-Jul-12 18:27:44,580 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.PagingController$2
+2013-Jul-12 18:27:51,831 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.PagingController$4
+2013-Jul-12 18:27:51,833 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat35_1_,
+        categoriap0_.nmcat as nmcat35_1_,
+        professorl1_.fkcatds as fkcatds35_3_,
+        professor2_.cdprf as fkprf3_,
+        professor2_.cdprf as cdprf36_0_,
+        professor2_.pfprf as pfprf36_0_,
+        professor2_.mtprf as mtprf36_0_,
+        professor2_.nmprf as nmprf36_0_,
+        professor2_1_.fkcatds as fkcatds37_0_,
+        professor2_1_.rgprfds as rgprfds37_0_,
+        professor2_1_.fktpcds as fktpcds37_0_ 
+    from
+        cat_ds categoriap0_ 
+    left outer join
+        prf_ds professorl1_ 
+            on categoriap0_.cdcat=professorl1_.fkcatds 
+    left outer join
+        prf professor2_ 
+            on professorl1_.fkprf=professor2_.cdprf 
+    left outer join
+        prf_ds professor2_1_ 
+            on professor2_.cdprf=professor2_1_.fkprf 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-12 18:27:51,856 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc43_1_,
+        tipocontra0_.nmtpc as nmtpc43_1_,
+        professorl1_.fktpcds as fktpcds43_3_,
+        professor2_.cdprf as fkprf3_,
+        professor2_.cdprf as cdprf36_0_,
+        professor2_.pfprf as pfprf36_0_,
+        professor2_.mtprf as mtprf36_0_,
+        professor2_.nmprf as nmprf36_0_,
+        professor2_1_.fkcatds as fkcatds37_0_,
+        professor2_1_.rgprfds as rgprfds37_0_,
+        professor2_1_.fktpcds as fktpcds37_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    left outer join
+        prf_ds professorl1_ 
+            on tipocontra0_.idtpc=professorl1_.fktpcds 
+    left outer join
+        prf professor2_ 
+            on professorl1_.fkprf=professor2_.cdprf 
+    left outer join
+        prf_ds professor2_1_ 
+            on professor2_.cdprf=professor2_1_.fkprf 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-12 18:27:51,872 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    update
+        cat_ds 
+    set
+        nmcat=? 
+    where
+        cdcat=?
+2013-Jul-12 18:27:51,931 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:27:51,935 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:27:51,936 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat35_,
+        categoriap0_.nmcat as nmcat35_ 
+    from
+        cat_ds categoriap0_ limit ?

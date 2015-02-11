@@ -1,0 +1,587 @@
+2013-Jul-13 02:00:12,696 [AWT-EventQueue-0] org.jboss.logging 
+  DEBUG Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2013-Jul-13 02:00:12,933 [AWT-EventQueue-0] org.hibernate.annotations.common.Version 
+  INFO  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-Jul-13 02:00:12,958 [AWT-EventQueue-0] org.hibernate.Version 
+  INFO  HHH000412: Hibernate Core {4.1.6.Final}
+2013-Jul-13 02:00:12,960 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000206: hibernate.properties not found
+2013-Jul-13 02:00:12,962 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000021: Bytecode provider name : javassist
+2013-Jul-13 02:00:12,993 [AWT-EventQueue-0] org.hibernate.ejb.Ejb3Configuration 
+  INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: eteab01PU
+	...]
+2013-Jul-13 02:00:15,401 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator 
+  INFO  HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2013-Jul-13 02:00:16,059 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-13 02:00:16,098 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-13 02:00:16,106 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-13 02:00:16,201 [AWT-EventQueue-0] org.hibernate.validator.internal.util.Version 
+  INFO  HV000001: Hibernate Validator 4.3.1.Final
+2013-Jul-13 02:00:22,778 [AWT-EventQueue-0] org.hibernate.ejb.Ejb3Configuration 
+  INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: etecabPU
+	...]
+2013-Jul-13 02:00:24,066 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator 
+  INFO  HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2013-Jul-13 02:00:24,222 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-13 02:00:24,223 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-13 02:00:24,224 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-13 02:00:26,368 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2013-Jul-13 02:00:26,368 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000115: Hibernate connection pool size: 20
+2013-Jul-13 02:00:26,369 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000006: Autocommit mode: true
+2013-Jul-13 02:00:26,369 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/eteab01]
+2013-Jul-13 02:00:26,379 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000046: Connection properties: {user=eteab01, password=****, autocommit=true, release_mode=auto}
+2013-Jul-13 02:00:26,423 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-13 02:00:26,425 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-13 02:00:26,426 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-13 02:00:26,694 [AWT-EventQueue-0] org.hibernate.ejb.internal.EntityManagerFactoryRegistry 
+  WARN  HHH000436: Entity manager factory name (eteab01PU) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2013-Jul-13 02:00:26,932 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        periodolet0_.cdplv as cdplv69_,
+        periodolet0_.yrplv as yrplv69_,
+        periodolet0_.dtfimplv as dtfimplv69_,
+        periodolet0_.dtinicioplv as dtinicio4_69_,
+        periodolet0_.smplv as smplv69_,
+        periodolet0_.stplv as stplv69_ 
+    from
+        eteab01.plv periodolet0_ 
+    where
+        periodolet0_.stplv=?
+2013-Jul-13 02:00:27,055 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        turmalist0_.fkplv as fkplv69_4_,
+        turmalist0_.cdtur as cdtur4_,
+        turmalist0_.cdtur as cdtur66_3_,
+        turmalist0_.fkrepalu as fkrepalu66_3_,
+        turmalist0_.fkmdl as fkmdl66_3_,
+        turmalist0_.fkper as fkper66_3_,
+        turmalist0_.fkplv as fkplv66_3_,
+        turmalist0_.sgtur as sgtur66_3_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_,
+        periodo3_.idper as idper64_2_,
+        periodo3_.nmper as nmper64_2_ 
+    from
+        eteab01.tur turmalist0_ 
+    inner join
+        eteab01.mdl modulo1_ 
+            on turmalist0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    inner join
+        eteab01.per periodo3_ 
+            on turmalist0_.fkper=periodo3_.idper 
+    where
+        turmalist0_.fkplv=?
+2013-Jul-13 02:00:27,177 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-13 02:00:27,209 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-13 02:00:27,213 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-13 02:00:27,216 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-13 02:00:27,220 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-13 02:00:27,222 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-13 02:00:27,225 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-13 02:00:27,229 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        turmalist0_.fkplv as fkplv69_4_,
+        turmalist0_.cdtur as cdtur4_,
+        turmalist0_.cdtur as cdtur66_3_,
+        turmalist0_.fkrepalu as fkrepalu66_3_,
+        turmalist0_.fkmdl as fkmdl66_3_,
+        turmalist0_.fkper as fkper66_3_,
+        turmalist0_.fkplv as fkplv66_3_,
+        turmalist0_.sgtur as sgtur66_3_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_,
+        periodo3_.idper as idper64_2_,
+        periodo3_.nmper as nmper64_2_ 
+    from
+        eteab01.tur turmalist0_ 
+    inner join
+        eteab01.mdl modulo1_ 
+            on turmalist0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    inner join
+        eteab01.per periodo3_ 
+            on turmalist0_.fkper=periodo3_.idper 
+    where
+        turmalist0_.fkplv=?
+2013-Jul-13 02:00:27,236 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-13 02:00:27,907 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-13 02:00:28,009 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_0_,
+        categoriap0_.nmcat as nmcat58_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-13 02:00:28,059 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-13 02:00:28,082 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_0_,
+        categoriap0_.nmcat as nmcat58_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-13 02:00:28,084 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-13 02:00:28,087 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-13 02:00:28,094 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-13 02:00:30,346 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$6 para o botão: |<<
+2013-Jul-13 02:00:30,347 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$7 para o botão: <
+2013-Jul-13 02:00:30,347 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$8 para o botão: >
+2013-Jul-13 02:00:30,347 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$9 para o botão: >>|
+2013-Jul-13 02:00:30,348 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$1 para o botão: Incluir
+2013-Jul-13 02:00:30,348 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$2 para o botão: Alterar
+2013-Jul-13 02:00:30,348 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$3 para o botão: Excluir
+2013-Jul-13 02:00:30,348 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$4 para o botão: Salvar
+2013-Jul-13 02:00:30,349 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$5 para o botão: Cancelar
+2013-Jul-13 02:00:30,449 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-13 02:00:30,454 [AWT-EventQueue-0] br.com.etec.service.CategoriaProfessorService$$EnhancerByCGLIB$$47e1817 
+  WARN  Não foi possível alterar o tamanho de página em 10  para br.com.etec.service.CategoriaProfessorService$$EnhancerByCGLIB$$47e1817
+2013-Jul-13 02:00:30,469 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-13 02:00:30,470 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat31_,
+        categoriap0_.nmcat as nmcat31_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-13 02:00:31,855 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(professor0_.cdprf) as col_0_0_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf limit ?
+2013-Jul-13 02:00:31,863 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-13 02:00:31,870 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_
+2013-Jul-13 02:00:31,890 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-13 02:00:31,896 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-13 02:00:31,972 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc limit ?
+2013-Jul-13 02:00:32,906 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(tipocontra0_.idtpc) as col_0_0_ 
+    from
+        tpc_ds tipocontra0_ limit ?
+2013-Jul-13 02:00:32,908 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_
+2013-Jul-13 02:00:32,975 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_ limit ?
+2013-Jul-13 02:00:33,430 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$1 para o botão: Atribuição de Aulas
+2013-Jul-13 02:00:33,431 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$2 para o botão: Professor
+2013-Jul-13 02:00:33,431 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$3 para o botão: Categoria Funcional
+2013-Jul-13 02:00:33,431 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$4 para o botão: Tipo de Contrato
+2013-Jul-13 02:00:33,432 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.LoginController$1 para o botão: Ok
+2013-Jul-13 02:00:33,432 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.LoginController$2 para o botão: Cancelar
+2013-Jul-13 02:00:46,675 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.LoginController$1
+2013-Jul-13 02:00:46,712 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        acesso login0_ 
+    where
+        login0_.nmusuario=? 
+        and login0_.nmsenha=? limit ?
+2013-Jul-13 02:00:47,221 [AWT-EventQueue-0] br.com.etec.controller.LoginController 
+  INFO  Acesso do usuário: admin
+2013-Jul-13 02:00:47,423 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(categoriap0_.cdcat) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-13 02:00:47,781 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-13 02:00:47,911 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-13 02:00:47,931 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(tipoatribu0_.idtat) as col_0_0_ 
+    from
+        tat tipoatribu0_ limit ?
+2013-Jul-13 02:00:48,011 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipoatribu0_.idtat as idtat72_,
+        tipoatribu0_.nmtat as nmtat72_ 
+    from
+        tat tipoatribu0_ limit ?
+2013-Jul-13 02:00:51,130 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.MainController$3
+2013-Jul-13 02:00:53,200 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.PagingController$2
+2013-Jul-13 02:00:55,209 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.PagingController$4
+2013-Jul-13 02:00:55,227 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  ERROR Ocorreu um erro!
+java.lang.RuntimeException: org.springframework.orm.hibernate3.HibernateSystemException: ids for this class must be manually assigned before calling save(): br.com.etec.model.CategoriaProfessor; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): br.com.etec.model.CategoriaProfessor
+	at br.com.etec.view.action.AbstractAction.actionPerformed(AbstractAction.java:74)
+	at br.com.etec.controller.AbstractController.executeAction(AbstractController.java:248)
+	at br.com.etec.controller.AbstractController.actionPerformed(AbstractController.java:156)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at com.jtattoo.plaf.BaseButtonListener.mouseReleased(BaseButtonListener.java:60)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:703)
+	at java.awt.EventQueue.access$000(EventQueue.java:102)
+	at java.awt.EventQueue$3.run(EventQueue.java:662)
+	at java.awt.EventQueue$3.run(EventQueue.java:660)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:676)
+	at java.awt.EventQueue$4.run(EventQueue.java:674)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:673)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:244)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:163)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:151)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:147)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:139)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:97)
+Caused by: org.springframework.orm.hibernate3.HibernateSystemException: ids for this class must be manually assigned before calling save(): br.com.etec.model.CategoriaProfessor; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): br.com.etec.model.CategoriaProfessor
+	at org.springframework.orm.hibernate3.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:690)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:104)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:403)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:58)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.data.jpa.repository.support.LockModeRepositoryPostProcessor$LockModePopulatingMethodIntercceptor.invoke(LockModeRepositoryPostProcessor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy42.save(Unknown Source)
+	at br.com.etec.service.AbstractService.save(AbstractService.java:67)
+	at br.com.etec.service.AbstractService$$FastClassByCGLIB$$4d27a4a4.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:689)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:155)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:622)
+	at br.com.etec.service.CategoriaProfessorService$$EnhancerByCGLIB$$47e1817.save(<generated>)
+	at br.com.etec.controller.PagingController$4.action(PagingController.java:145)
+	at br.com.etec.view.action.AbstractAction.actionPerformed(AbstractAction.java:69)
+	... 39 more
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): br.com.etec.model.CategoriaProfessor
+	at org.hibernate.id.Assigned.generate(Assigned.java:52)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:118)
+	at org.hibernate.ejb.event.EJB3PersistEventListener.saveWithGeneratedId(EJB3PersistEventListener.java:78)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:208)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:151)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:78)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:844)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:819)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:823)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:865)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:240)
+	at $Proxy31.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:342)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:334)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:319)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:155)
+	... 57 more

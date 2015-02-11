@@ -1,0 +1,49 @@
+2013-Jul-12 18:09:10,982 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:09:20,418 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:09:20,551 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:09:20,553 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat31_,
+        categoriap0_.nmcat as nmcat31_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:09:55,680 [AWT-EventQueue-0] org.jboss.logging 
+  DEBUG Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2013-Jul-12 18:09:55,881 [AWT-EventQueue-0] org.hibernate.annotations.common.Version 
+  INFO  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-Jul-12 18:09:55,897 [AWT-EventQueue-0] org.hibernate.Version 
+  INFO  HHH000412: Hibernate Core {4.1.6.Final}
+2013-Jul-12 18:09:55,901 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000206: hibernate.properties not found
+2013-Jul-12 18:09:55,905 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000021: Bytecode provider name : javassist
+2013-Jul-12 18:09:55,939 [AWT-EventQueue-0] org.hibernate.ejb.Ejb3Configuration 
+  INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: eteab01PU
+	...]
+2013-Jul-12 18:09:56,922 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator 
+  INFO  HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2013-Jul-12 18:09:57,406 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-12 18:09:57,464 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-12 18:09:57,470 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-12 18:09:57,553 [AWT-EventQueue-0] org.hibernate.validator.internal.util.Version 
+  INFO  HV000001: Hibernate Validator 4.3.1.Final

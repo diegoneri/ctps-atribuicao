@@ -1,0 +1,12 @@
+2013-Jul-12 17:49:53,232 [AWT-EventQueue-0] org.hibernate.annotations.common.Version 
+  INFO  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-Jul-12 17:49:54,029 [AWT-EventQueue-0] org.hibernate.Version 
+  INFO  HHH000412: Hibernate Core {4.1.6.Final}
+2013-Jul-12 17:49:54,097 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000206: hibernate.properties not found
+2013-Jul-12 17:49:54,101 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000021: Bytecode provider name : javassist
+2013-Jul-12 17:49:54,653 [AWT-EventQueue-0] org.hibernate.ejb.Ejb3Configuration 
+  INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: eteab01PU
+	...]

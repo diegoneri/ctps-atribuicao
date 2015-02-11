@@ -1,0 +1,4 @@
+2013-Jun-27 04:42:43,370 [main] br.com.etec.Main 
+  INFO  Atribuindo o LookAndFeel Nimbus
+2013-Jun-27 04:42:47,245 [main] org.jboss.logging 
+  DEBUG Logging Provider: org.jboss.logging.Log4jLoggerProvider

@@ -1,0 +1,6 @@
+2013-Jul-12 17:54:24,955 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_

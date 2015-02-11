@@ -1,0 +1,24 @@
+2013-Jun-27 03:55:00,951 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.LoginController$1
+2013-Jun-27 03:55:00,999 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        acesso login0_ 
+    where
+        login0_.nmusuario=? 
+        and login0_.nmsenha=? limit ?
+2013-Jun-27 03:55:01,027 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        login0_.nmusuario as nmusuario29_,
+        login0_.nmacesso as nmacesso29_,
+        login0_.nmsenha as nmsenha29_ 
+    from
+        acesso login0_ 
+    where
+        login0_.nmusuario=? 
+        and login0_.nmsenha=? limit ?
+2013-Jun-27 03:55:01,854 [AWT-EventQueue-0] br.com.etec.controller.LoginController 
+  INFO  Acesso do usuário: admin

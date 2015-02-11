@@ -1,0 +1,16 @@
+2013-Jul-01 21:55:39,724 [AWT-EventQueue-0] org.jboss.logging 
+  DEBUG Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2013-Jul-01 21:55:39,935 [AWT-EventQueue-0] org.hibernate.annotations.common.Version 
+  INFO  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-Jul-01 21:55:39,959 [AWT-EventQueue-0] org.hibernate.Version 
+  INFO  HHH000412: Hibernate Core {4.1.6.Final}
+2013-Jul-01 21:55:39,962 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000206: hibernate.properties not found
+2013-Jul-01 21:55:39,966 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000021: Bytecode provider name : javassist
+2013-Jul-01 21:55:40,020 [AWT-EventQueue-0] org.hibernate.ejb.Ejb3Configuration 
+  INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: eteab01PU
+	...]
+2013-Jul-01 21:55:41,001 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator 
+  INFO  HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider

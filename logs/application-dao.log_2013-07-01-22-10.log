@@ -1,0 +1,4 @@
+2013-Jul-01 22:10:38,070 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.MainController$1
+2013-Jul-01 22:10:53,418 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.MainController$3

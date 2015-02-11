@@ -1,0 +1,238 @@
+2013-Jun-27 04:17:18,879 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        periodolet0_.cdplv as cdplv11_,
+        periodolet0_.yrplv as yrplv11_,
+        periodolet0_.dtfimplv as dtfimplv11_,
+        periodolet0_.dtinicioplv as dtinicio4_11_,
+        periodolet0_.smplv as smplv11_,
+        periodolet0_.stplv as stplv11_ 
+    from
+        eteab01.plv periodolet0_ 
+    where
+        periodolet0_.stplv=?
+2013-Jun-27 04:17:19,053 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        turmalist0_.fkplv as fkplv11_4_,
+        turmalist0_.cdtur as cdtur4_,
+        turmalist0_.cdtur as cdtur8_3_,
+        turmalist0_.fkrepalu as fkrepalu8_3_,
+        turmalist0_.fkmdl as fkmdl8_3_,
+        turmalist0_.fkper as fkper8_3_,
+        turmalist0_.fkplv as fkplv8_3_,
+        turmalist0_.sgtur as sgtur8_3_,
+        modulo1_.cdmdl as cdmdl13_0_,
+        modulo1_.fkgrd as fkgrd13_0_,
+        modulo1_.sqmdl as sqmdl13_0_,
+        gradecurri2_.cdgrd as cdgrd12_1_,
+        gradecurri2_.dsgrd as dsgrd12_1_,
+        gradecurri2_.fkhab as fkhab12_1_,
+        gradecurri2_.obgrd as obgrd12_1_,
+        periodo3_.idper as idper6_2_,
+        periodo3_.nmper as nmper6_2_ 
+    from
+        eteab01.tur turmalist0_ 
+    inner join
+        eteab01.mdl modulo1_ 
+            on turmalist0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    inner join
+        eteab01.per periodo3_ 
+            on turmalist0_.fkper=periodo3_.idper 
+    where
+        turmalist0_.fkplv=?
+2013-Jun-27 04:17:19,106 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab5_0_,
+        habilitaca0_.dshab as dshab5_0_,
+        habilitaca0_.nmhab as nmhab5_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jun-27 04:17:19,111 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab5_0_,
+        habilitaca0_.dshab as dshab5_0_,
+        habilitaca0_.nmhab as nmhab5_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jun-27 04:17:19,114 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab5_0_,
+        habilitaca0_.dshab as dshab5_0_,
+        habilitaca0_.nmhab as nmhab5_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jun-27 04:17:19,120 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab5_0_,
+        habilitaca0_.dshab as dshab5_0_,
+        habilitaca0_.nmhab as nmhab5_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jun-27 04:17:19,122 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab5_0_,
+        habilitaca0_.dshab as dshab5_0_,
+        habilitaca0_.nmhab as nmhab5_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jun-27 04:17:19,127 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab5_0_,
+        habilitaca0_.dshab as dshab5_0_,
+        habilitaca0_.nmhab as nmhab5_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jun-27 04:17:19,130 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab5_0_,
+        habilitaca0_.dshab as dshab5_0_,
+        habilitaca0_.nmhab as nmhab5_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jun-27 04:17:19,134 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        turmalist0_.fkplv as fkplv11_4_,
+        turmalist0_.cdtur as cdtur4_,
+        turmalist0_.cdtur as cdtur8_3_,
+        turmalist0_.fkrepalu as fkrepalu8_3_,
+        turmalist0_.fkmdl as fkmdl8_3_,
+        turmalist0_.fkper as fkper8_3_,
+        turmalist0_.fkplv as fkplv8_3_,
+        turmalist0_.sgtur as sgtur8_3_,
+        modulo1_.cdmdl as cdmdl13_0_,
+        modulo1_.fkgrd as fkgrd13_0_,
+        modulo1_.sqmdl as sqmdl13_0_,
+        gradecurri2_.cdgrd as cdgrd12_1_,
+        gradecurri2_.dsgrd as dsgrd12_1_,
+        gradecurri2_.fkhab as fkhab12_1_,
+        gradecurri2_.obgrd as obgrd12_1_,
+        periodo3_.idper as idper6_2_,
+        periodo3_.nmper as nmper6_2_ 
+    from
+        eteab01.tur turmalist0_ 
+    inner join
+        eteab01.mdl modulo1_ 
+            on turmalist0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    inner join
+        eteab01.per periodo3_ 
+            on turmalist0_.fkper=periodo3_.idper 
+    where
+        turmalist0_.fkplv=?
+2013-Jun-27 04:17:19,141 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab5_0_,
+        habilitaca0_.dshab as dshab5_0_,
+        habilitaca0_.nmhab as nmhab5_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jun-27 04:17:19,643 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf3_,
+        professor0_.pfprf as pfprf3_,
+        professor0_.mtprf as mtprf3_,
+        professor0_.nmprf as nmprf3_,
+        professor0_1_.fkcatds as fkcatds4_,
+        professor0_1_.rgprfds as rgprfds4_,
+        professor0_1_.fktpcds as fktpcds4_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jun-27 04:17:19,661 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat0_0_,
+        categoriap0_.nmcat as nmcat0_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jun-27 04:17:19,664 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc7_0_,
+        tipocontra0_.nmtpc as nmtpc7_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jun-27 04:17:19,666 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat0_0_,
+        categoriap0_.nmcat as nmcat0_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jun-27 04:17:19,671 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc7_0_,
+        tipocontra0_.nmtpc as nmtpc7_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jun-27 04:17:19,675 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc7_0_,
+        tipocontra0_.nmtpc as nmtpc7_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jun-27 04:17:19,683 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf3_,
+        professor0_.pfprf as pfprf3_,
+        professor0_.mtprf as mtprf3_,
+        professor0_.nmprf as nmprf3_,
+        professor0_1_.fkcatds as fkcatds4_,
+        professor0_1_.rgprfds as rgprfds4_,
+        professor0_1_.fktpcds as fktpcds4_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc

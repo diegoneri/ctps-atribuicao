@@ -1,0 +1,32 @@
+2013-Jul-12 18:54:07,243 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:54:07,256 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat43_,
+        categoriap0_.nmcat as nmcat43_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:54:07,359 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:54:07,362 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:54:07,364 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat43_,
+        categoriap0_.nmcat as nmcat43_ 
+    from
+        cat_ds categoriap0_ limit ?

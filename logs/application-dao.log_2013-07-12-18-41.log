@@ -1,0 +1,435 @@
+2013-Jul-12 18:41:34,645 [AWT-EventQueue-0] org.hibernate.annotations.common.Version 
+  INFO  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-Jul-12 18:41:34,726 [AWT-EventQueue-0] org.hibernate.Version 
+  INFO  HHH000412: Hibernate Core {4.1.6.Final}
+2013-Jul-12 18:41:34,732 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000206: hibernate.properties not found
+2013-Jul-12 18:41:34,735 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000021: Bytecode provider name : javassist
+2013-Jul-12 18:41:34,790 [AWT-EventQueue-0] org.hibernate.ejb.Ejb3Configuration 
+  INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: eteab01PU
+	...]
+2013-Jul-12 18:41:36,440 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator 
+  INFO  HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2013-Jul-12 18:41:36,855 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-12 18:41:36,883 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-12 18:41:36,891 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-12 18:41:36,976 [AWT-EventQueue-0] org.hibernate.validator.internal.util.Version 
+  INFO  HV000001: Hibernate Validator 4.3.1.Final
+2013-Jul-12 18:41:43,612 [AWT-EventQueue-0] org.hibernate.ejb.Ejb3Configuration 
+  INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: etecabPU
+	...]
+2013-Jul-12 18:41:44,144 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator 
+  INFO  HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2013-Jul-12 18:41:44,185 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-12 18:41:44,187 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-12 18:41:44,187 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-12 18:41:45,320 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2013-Jul-12 18:41:45,323 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000115: Hibernate connection pool size: 20
+2013-Jul-12 18:41:45,325 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000006: Autocommit mode: true
+2013-Jul-12 18:41:45,327 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/eteab01]
+2013-Jul-12 18:41:45,330 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000046: Connection properties: {user=eteab01, password=****, autocommit=true, release_mode=auto}
+2013-Jul-12 18:41:45,373 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-12 18:41:45,374 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-12 18:41:45,374 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-12 18:41:45,568 [AWT-EventQueue-0] org.hibernate.ejb.internal.EntityManagerFactoryRegistry 
+  WARN  HHH000436: Entity manager factory name (eteab01PU) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2013-Jul-12 18:41:45,873 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        periodolet0_.cdplv as cdplv69_,
+        periodolet0_.yrplv as yrplv69_,
+        periodolet0_.dtfimplv as dtfimplv69_,
+        periodolet0_.dtinicioplv as dtinicio4_69_,
+        periodolet0_.smplv as smplv69_,
+        periodolet0_.stplv as stplv69_ 
+    from
+        eteab01.plv periodolet0_ 
+    where
+        periodolet0_.stplv=?
+2013-Jul-12 18:41:45,965 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        turmalist0_.fkplv as fkplv69_4_,
+        turmalist0_.cdtur as cdtur4_,
+        turmalist0_.cdtur as cdtur66_3_,
+        turmalist0_.fkrepalu as fkrepalu66_3_,
+        turmalist0_.fkmdl as fkmdl66_3_,
+        turmalist0_.fkper as fkper66_3_,
+        turmalist0_.fkplv as fkplv66_3_,
+        turmalist0_.sgtur as sgtur66_3_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_,
+        periodo3_.idper as idper64_2_,
+        periodo3_.nmper as nmper64_2_ 
+    from
+        eteab01.tur turmalist0_ 
+    inner join
+        eteab01.mdl modulo1_ 
+            on turmalist0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    inner join
+        eteab01.per periodo3_ 
+            on turmalist0_.fkper=periodo3_.idper 
+    where
+        turmalist0_.fkplv=?
+2013-Jul-12 18:41:45,992 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:41:45,996 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:41:46,000 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:41:46,004 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:41:46,007 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:41:46,010 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:41:46,012 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:41:46,017 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        turmalist0_.fkplv as fkplv69_4_,
+        turmalist0_.cdtur as cdtur4_,
+        turmalist0_.cdtur as cdtur66_3_,
+        turmalist0_.fkrepalu as fkrepalu66_3_,
+        turmalist0_.fkmdl as fkmdl66_3_,
+        turmalist0_.fkper as fkper66_3_,
+        turmalist0_.fkplv as fkplv66_3_,
+        turmalist0_.sgtur as sgtur66_3_,
+        modulo1_.cdmdl as cdmdl71_0_,
+        modulo1_.fkgrd as fkgrd71_0_,
+        modulo1_.sqmdl as sqmdl71_0_,
+        gradecurri2_.cdgrd as cdgrd70_1_,
+        gradecurri2_.dsgrd as dsgrd70_1_,
+        gradecurri2_.fkhab as fkhab70_1_,
+        gradecurri2_.obgrd as obgrd70_1_,
+        periodo3_.idper as idper64_2_,
+        periodo3_.nmper as nmper64_2_ 
+    from
+        eteab01.tur turmalist0_ 
+    inner join
+        eteab01.mdl modulo1_ 
+            on turmalist0_.fkmdl=modulo1_.cdmdl 
+    left outer join
+        eteab01.grd gradecurri2_ 
+            on modulo1_.fkgrd=gradecurri2_.cdgrd 
+    inner join
+        eteab01.per periodo3_ 
+            on turmalist0_.fkper=periodo3_.idper 
+    where
+        turmalist0_.fkplv=?
+2013-Jul-12 18:41:46,023 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        habilitaca0_.idhab as idhab63_0_,
+        habilitaca0_.dshab as dshab63_0_,
+        habilitaca0_.nmhab as nmhab63_0_ 
+    from
+        eteab01.hab habilitaca0_ 
+    where
+        habilitaca0_.idhab=?
+2013-Jul-12 18:41:47,458 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:41:47,477 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_0_,
+        categoriap0_.nmcat as nmcat58_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-12 18:41:47,481 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-12 18:41:47,483 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_0_,
+        categoriap0_.nmcat as nmcat58_0_ 
+    from
+        cat_ds categoriap0_ 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-12 18:41:47,485 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-12 18:41:47,489 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_0_,
+        tipocontra0_.nmtpc as nmtpc65_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-12 18:41:47,496 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:41:49,838 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$6 para o botão: |<<
+2013-Jul-12 18:41:49,840 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$7 para o botão: <
+2013-Jul-12 18:41:49,841 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$8 para o botão: >
+2013-Jul-12 18:41:49,843 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$9 para o botão: >>|
+2013-Jul-12 18:41:49,845 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$1 para o botão: Incluir
+2013-Jul-12 18:41:49,846 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$2 para o botão: Alterar
+2013-Jul-12 18:41:49,848 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$3 para o botão: Excluir
+2013-Jul-12 18:41:49,850 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$4 para o botão: Salvar
+2013-Jul-12 18:41:49,852 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.PagingController$5 para o botão: Cancelar
+2013-Jul-12 18:41:50,010 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:41:50,015 [AWT-EventQueue-0] br.com.etec.service.CategoriaProfessorService$$EnhancerByCGLIB$$77bbb46c 
+  WARN  Não foi possível alterar o tamanho de página em 10  para br.com.etec.service.CategoriaProfessorService$$EnhancerByCGLIB$$77bbb46c
+2013-Jul-12 18:41:50,031 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:41:50,033 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat37_,
+        categoriap0_.nmcat as nmcat37_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:41:51,838 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(professor0_.cdprf) as col_0_0_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf limit ?
+2013-Jul-12 18:41:51,849 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:41:51,860 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_
+2013-Jul-12 18:41:51,908 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:41:51,914 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:41:51,988 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc limit ?
+2013-Jul-12 18:41:52,578 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(tipocontra0_.idtpc) as col_0_0_ 
+    from
+        tpc_ds tipocontra0_ limit ?
+2013-Jul-12 18:41:52,580 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_
+2013-Jul-12 18:41:52,672 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_ limit ?
+2013-Jul-12 18:41:53,096 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$1 para o botão: Atribuição de Aulas
+2013-Jul-12 18:41:53,097 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$2 para o botão: Professor
+2013-Jul-12 18:41:53,098 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$3 para o botão: Categoria Funcional
+2013-Jul-12 18:41:53,099 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$4 para o botão: Tipo de Contrato
+2013-Jul-12 18:41:53,100 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.LoginController$1 para o botão: Ok
+2013-Jul-12 18:41:53,100 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.LoginController$2 para o botão: Cancelar

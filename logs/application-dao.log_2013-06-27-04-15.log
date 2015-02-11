@@ -1,0 +1,1440 @@
+2013-Jun-27 04:15:00,416 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:00,505 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:00,549 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:00,614 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:00,673 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:00,774 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:00,847 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:00,926 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:01,007 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:01,102 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:01,186 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?
+2013-Jun-27 04:15:01,275 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        atribuicao0_.cdatr as cdatr59_12_,
+        atribuicao0_.fkdis as fkdis59_12_,
+        atribuicao0_.fkplv as fkplv59_12_,
+        atribuicao0_.fkprf as fkprf59_12_,
+        atribuicao0_.fktat as fktat59_12_,
+        atribuicao0_.fktur as fktur59_12_,
+        atribuicao0_1_.fkatrsub as fkatrsub60_12_,
+        atribuicao0_1_.csdisatr as csdisatr60_12_,
+        atribuicao0_1_.flatrsub as flatrsub60_12_,
+        disciplina1_.cddis as cddis67_0_,
+        disciplina1_.csdis as csdis67_0_,
+        disciplina1_.fkmdl as fkmdl67_0_,
+        disciplina1_.nmdis as nmdis67_0_,
+        disciplina1_.sgdis as sgdis67_0_,
+        disciplina1_1_.csdivdis as csdivdis68_0_,
+        modulo2_.cdmdl as cdmdl71_1_,
+        modulo2_.fkgrd as fkgrd71_1_,
+        modulo2_.sqmdl as sqmdl71_1_,
+        periodolet3_.cdplv as cdplv69_2_,
+        periodolet3_.yrplv as yrplv69_2_,
+        periodolet3_.dtfimplv as dtfimplv69_2_,
+        periodolet3_.dtinicioplv as dtinicio4_69_2_,
+        periodolet3_.smplv as smplv69_2_,
+        periodolet3_.stplv as stplv69_2_,
+        turmalist4_.fkplv as fkplv69_14_,
+        turmalist4_.cdtur as cdtur14_,
+        turmalist4_.cdtur as cdtur66_3_,
+        turmalist4_.fkrepalu as fkrepalu66_3_,
+        turmalist4_.fkmdl as fkmdl66_3_,
+        turmalist4_.fkper as fkper66_3_,
+        turmalist4_.fkplv as fkplv66_3_,
+        turmalist4_.sgtur as sgtur66_3_,
+        professor5_.cdprf as cdprf61_4_,
+        professor5_.pfprf as pfprf61_4_,
+        professor5_.mtprf as mtprf61_4_,
+        professor5_.nmprf as nmprf61_4_,
+        professor5_1_.fkcatds as fkcatds62_4_,
+        professor5_1_.rgprfds as rgprfds62_4_,
+        professor5_1_.fktpcds as fktpcds62_4_,
+        categoriap6_.cdcat as cdcat58_5_,
+        categoriap6_.nmcat as nmcat58_5_,
+        tipocontra7_.idtpc as idtpc65_6_,
+        tipocontra7_.nmtpc as nmtpc65_6_,
+        tipoatribu8_.idtat as idtat72_7_,
+        tipoatribu8_.nmtat as nmtat72_7_,
+        turma9_.cdtur as cdtur66_8_,
+        turma9_.fkrepalu as fkrepalu66_8_,
+        turma9_.fkmdl as fkmdl66_8_,
+        turma9_.fkper as fkper66_8_,
+        turma9_.fkplv as fkplv66_8_,
+        turma9_.sgtur as sgtur66_8_,
+        modulo10_.cdmdl as cdmdl71_9_,
+        modulo10_.fkgrd as fkgrd71_9_,
+        modulo10_.sqmdl as sqmdl71_9_,
+        periodo11_.idper as idper64_10_,
+        periodo11_.nmper as nmper64_10_,
+        atribuicao12_.cdatr as cdatr59_11_,
+        atribuicao12_.fkdis as fkdis59_11_,
+        atribuicao12_.fkplv as fkplv59_11_,
+        atribuicao12_.fkprf as fkprf59_11_,
+        atribuicao12_.fktat as fktat59_11_,
+        atribuicao12_.fktur as fktur59_11_,
+        atribuicao12_1_.fkatrsub as fkatrsub60_11_,
+        atribuicao12_1_.csdisatr as csdisatr60_11_,
+        atribuicao12_1_.flatrsub as flatrsub60_11_ 
+    from
+        atr atribuicao0_ 
+    left outer join
+        atr_ds atribuicao0_1_ 
+            on atribuicao0_.cdatr=atribuicao0_1_.fkatr 
+    inner join
+        dis disciplina1_ 
+            on atribuicao0_.fkdis=disciplina1_.cddis 
+    left outer join
+        dis_ds disciplina1_1_ 
+            on disciplina1_.cddis=disciplina1_1_.fkdis 
+    left outer join
+        eteab01.mdl modulo2_ 
+            on disciplina1_.fkmdl=modulo2_.cdmdl 
+    inner join
+        eteab01.plv periodolet3_ 
+            on atribuicao0_.fkplv=periodolet3_.cdplv 
+    left outer join
+        eteab01.tur turmalist4_ 
+            on periodolet3_.cdplv=turmalist4_.fkplv 
+    inner join
+        prf professor5_ 
+            on atribuicao0_.fkprf=professor5_.cdprf 
+    left outer join
+        prf_ds professor5_1_ 
+            on professor5_.cdprf=professor5_1_.fkprf 
+    left outer join
+        cat_ds categoriap6_ 
+            on professor5_1_.fkcatds=categoriap6_.cdcat 
+    left outer join
+        tpc_ds tipocontra7_ 
+            on professor5_1_.fktpcds=tipocontra7_.idtpc 
+    inner join
+        tat tipoatribu8_ 
+            on atribuicao0_.fktat=tipoatribu8_.idtat 
+    inner join
+        eteab01.tur turma9_ 
+            on atribuicao0_.fktur=turma9_.cdtur 
+    left outer join
+        eteab01.mdl modulo10_ 
+            on turma9_.fkmdl=modulo10_.cdmdl 
+    left outer join
+        eteab01.per periodo11_ 
+            on turma9_.fkper=periodo11_.idper 
+    left outer join
+        atr atribuicao12_ 
+            on atribuicao0_1_.fkatrsub=atribuicao12_.cdatr 
+    left outer join
+        atr_ds atribuicao12_1_ 
+            on atribuicao12_.cdatr=atribuicao12_1_.fkatr 
+    where
+        atribuicao0_.cdatr=?

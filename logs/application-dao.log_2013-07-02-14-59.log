@@ -1,0 +1,70 @@
+2013-Jul-02 14:59:24,187 [AWT-EventQueue-0] org.hibernate.annotations.common.Version 
+  INFO  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-Jul-02 14:59:24,265 [AWT-EventQueue-0] org.hibernate.Version 
+  INFO  HHH000412: Hibernate Core {4.1.6.Final}
+2013-Jul-02 14:59:24,269 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000206: hibernate.properties not found
+2013-Jul-02 14:59:24,273 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000021: Bytecode provider name : javassist
+2013-Jul-02 14:59:24,311 [AWT-EventQueue-0] org.hibernate.ejb.Ejb3Configuration 
+  INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: eteab01PU
+	...]
+2013-Jul-02 14:59:26,324 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator 
+  INFO  HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2013-Jul-02 14:59:26,921 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-02 14:59:26,946 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-02 14:59:26,953 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-02 14:59:27,027 [AWT-EventQueue-0] org.hibernate.validator.internal.util.Version 
+  INFO  HV000001: Hibernate Validator 4.3.1.Final
+2013-Jul-02 14:59:31,965 [AWT-EventQueue-0] org.hibernate.ejb.Ejb3Configuration 
+  INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: etecabPU
+	...]
+2013-Jul-02 14:59:32,738 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator 
+  INFO  HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2013-Jul-02 14:59:34,248 [AWT-EventQueue-0] org.hibernate.engine.jdbc.internal.JdbcServicesImpl 
+  WARN  HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+2013-Jul-02 14:59:34,249 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-02 14:59:34,251 [AWT-EventQueue-0] org.hibernate.engine.jdbc.internal.LobCreatorBuilder 
+  INFO  HHH000422: Disabling contextual LOB creation as connection was null
+2013-Jul-02 14:59:34,252 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-02 14:59:34,253 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-02 14:59:35,203 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2013-Jul-02 14:59:35,204 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000115: Hibernate connection pool size: 20
+2013-Jul-02 14:59:35,204 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000006: Autocommit mode: true
+2013-Jul-02 14:59:35,205 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://mysql.eteab.com.br:3306/eteab01]
+2013-Jul-02 14:59:35,206 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000046: Connection properties: {user=eteab01, password=****, autocommit=true, release_mode=auto}
+2013-Jul-02 14:59:36,211 [AWT-EventQueue-0] org.hibernate.engine.jdbc.internal.JdbcServicesImpl 
+  WARN  HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2013-Jul-02 14:59:36,212 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Jul-02 14:59:36,217 [AWT-EventQueue-0] org.hibernate.engine.jdbc.internal.LobCreatorBuilder 
+  INFO  HHH000422: Disabling contextual LOB creation as connection was null
+2013-Jul-02 14:59:36,218 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Jul-02 14:59:36,218 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Jul-02 14:59:36,323 [AWT-EventQueue-0] org.hibernate.ejb.internal.EntityManagerFactoryRegistry 
+  WARN  HHH000436: Entity manager factory name (eteab01PU) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2013-Jul-02 14:59:37,750 [AWT-EventQueue-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper 
+  WARN  SQL Error: 0, SQLState: 08S01
+2013-Jul-02 14:59:37,751 [AWT-EventQueue-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper 
+  ERROR Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.

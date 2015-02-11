@@ -1,0 +1,42 @@
+2013-Jul-15 17:43:06,331 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        acesso login0_ 
+    where
+        login0_.nmusuario=? 
+        and login0_.nmsenha=? limit ?
+2013-Jul-15 17:43:06,846 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(categoriap0_.cdcat) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-15 17:43:07,229 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-15 17:43:07,430 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-15 17:43:07,449 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(tipoatribu0_.idtat) as col_0_0_ 
+    from
+        tat tipoatribu0_ limit ?
+2013-Jul-15 17:43:07,480 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipoatribu0_.idtat as idtat72_,
+        tipoatribu0_.nmtat as nmtat72_ 
+    from
+        tat tipoatribu0_ limit ?

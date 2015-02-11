@@ -1,0 +1,12 @@
+2013-Jun-27 09:00:58,981 [main] br.com.etec.Main 
+  INFO  LookAndFeel Metal
+2013-Jun-27 09:00:59,039 [main] br.com.etec.Main 
+  INFO  LookAndFeel Nimbus
+2013-Jun-27 09:00:59,471 [main] br.com.etec.Main 
+  INFO  Atribuindo o LookAndFeel Nimbus
+2013-Jun-27 09:00:59,472 [main] br.com.etec.Main 
+  INFO  LookAndFeel CDE/Motif
+2013-Jun-27 09:00:59,472 [main] br.com.etec.Main 
+  INFO  LookAndFeel Windows
+2013-Jun-27 09:00:59,473 [main] br.com.etec.Main 
+  INFO  LookAndFeel Windows Classic

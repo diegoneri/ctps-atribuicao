@@ -1,0 +1,4 @@
+2013-Jun-27 10:47:00,435 [AWT-EventQueue-0] br.com.etec.controller.LoginController 
+  INFO  Acesso do usuário: admin
+2013-Jun-27 10:47:06,089 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.MainController$1

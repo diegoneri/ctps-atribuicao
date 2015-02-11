@@ -1,0 +1,56 @@
+2013-Jul-03 15:47:15,691 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.LoginController$1
+2013-Jul-03 15:47:15,797 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        acesso login0_ limit ?
+2013-Jul-03 15:47:17,087 [AWT-EventQueue-0] br.com.etec.controller.LoginController 
+  INFO  Acesso do usuário: admin
+2013-Jul-03 15:47:17,313 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(tipoatribu0_.idtat) as col_0_0_ 
+    from
+        tat tipoatribu0_ limit ?
+2013-Jul-03 15:47:17,441 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipoatribu0_.idtat as idtat72_,
+        tipoatribu0_.nmtat as nmtat72_ 
+    from
+        tat tipoatribu0_ limit ?
+2013-Jul-03 15:47:20,756 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.MainController$2
+2013-Jul-03 15:47:31,834 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    insert 
+    into
+        prf_ds
+        (fkcatds, rgprfds, fktpcds, fkprf) 
+    values
+        (?, ?, ?, ?)
+2013-Jul-03 15:47:45,844 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.MainController$3
+2013-Jul-03 15:47:54,974 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    update
+        cat_ds 
+    set
+        nmcat=? 
+    where
+        cdcat=?
+2013-Jul-03 15:47:55,041 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(categoriap0_.cdcat) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-03 15:47:55,058 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_ limit ?

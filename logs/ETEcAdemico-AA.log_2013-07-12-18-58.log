@@ -1,0 +1,194 @@
+2013-Jul-12 18:58:13,250 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat40_1_,
+        categoriap0_.nmcat as nmcat40_1_,
+        professorl1_.fkcatds as fkcatds40_3_,
+        professor2_.cdprf as fkprf3_,
+        professor2_.cdprf as cdprf38_0_,
+        professor2_.pfprf as pfprf38_0_,
+        professor2_.mtprf as mtprf38_0_,
+        professor2_.nmprf as nmprf38_0_,
+        professor2_1_.fkcatds as fkcatds39_0_,
+        professor2_1_.rgprfds as rgprfds39_0_,
+        professor2_1_.fktpcds as fktpcds39_0_ 
+    from
+        cat_ds categoriap0_ 
+    left outer join
+        prf_ds professorl1_ 
+            on categoriap0_.cdcat=professorl1_.fkcatds 
+    left outer join
+        prf professor2_ 
+            on professorl1_.fkprf=professor2_.cdprf 
+    left outer join
+        prf_ds professor2_1_ 
+            on professor2_.cdprf=professor2_1_.fkprf 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-12 18:58:13,347 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    insert 
+    into
+        cat_ds
+        (nmcat, cdcat) 
+    values
+        (?, ?)
+2013-Jul-12 18:58:13,379 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:58:13,382 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:58:13,383 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat40_,
+        categoriap0_.nmcat as nmcat40_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:58:30,809 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.PagingController$3
+2013-Jul-12 18:58:32,045 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat40_1_,
+        categoriap0_.nmcat as nmcat40_1_,
+        professorl1_.fkcatds as fkcatds40_3_,
+        professor2_.cdprf as fkprf3_,
+        professor2_.cdprf as cdprf38_0_,
+        professor2_.pfprf as pfprf38_0_,
+        professor2_.mtprf as mtprf38_0_,
+        professor2_.nmprf as nmprf38_0_,
+        professor2_1_.fkcatds as fkcatds39_0_,
+        professor2_1_.rgprfds as rgprfds39_0_,
+        professor2_1_.fktpcds as fktpcds39_0_ 
+    from
+        cat_ds categoriap0_ 
+    left outer join
+        prf_ds professorl1_ 
+            on categoriap0_.cdcat=professorl1_.fkcatds 
+    left outer join
+        prf professor2_ 
+            on professorl1_.fkprf=professor2_.cdprf 
+    left outer join
+        prf_ds professor2_1_ 
+            on professor2_.cdprf=professor2_1_.fkprf 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-12 18:58:32,057 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    delete 
+    from
+        cat_ds 
+    where
+        cdcat=?
+2013-Jul-12 18:58:32,088 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:58:32,090 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:58:32,091 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat40_,
+        categoriap0_.nmcat as nmcat40_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:58:36,159 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.PagingController$2
+2013-Jul-12 18:58:39,130 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Executando action: class br.com.etec.controller.PagingController$4
+2013-Jul-12 18:58:44,521 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat40_1_,
+        categoriap0_.nmcat as nmcat40_1_,
+        professorl1_.fkcatds as fkcatds40_3_,
+        professor2_.cdprf as fkprf3_,
+        professor2_.cdprf as cdprf38_0_,
+        professor2_.pfprf as pfprf38_0_,
+        professor2_.mtprf as mtprf38_0_,
+        professor2_.nmprf as nmprf38_0_,
+        professor2_1_.fkcatds as fkcatds39_0_,
+        professor2_1_.rgprfds as rgprfds39_0_,
+        professor2_1_.fktpcds as fktpcds39_0_ 
+    from
+        cat_ds categoriap0_ 
+    left outer join
+        prf_ds professorl1_ 
+            on categoriap0_.cdcat=professorl1_.fkcatds 
+    left outer join
+        prf professor2_ 
+            on professorl1_.fkprf=professor2_.cdprf 
+    left outer join
+        prf_ds professor2_1_ 
+            on professor2_.cdprf=professor2_1_.fkprf 
+    where
+        categoriap0_.cdcat=?
+2013-Jul-12 18:58:44,524 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc31_1_,
+        tipocontra0_.nmtpc as nmtpc31_1_,
+        professorl1_.fktpcds as fktpcds31_3_,
+        professor2_.cdprf as fkprf3_,
+        professor2_.cdprf as cdprf38_0_,
+        professor2_.pfprf as pfprf38_0_,
+        professor2_.mtprf as mtprf38_0_,
+        professor2_.nmprf as nmprf38_0_,
+        professor2_1_.fkcatds as fkcatds39_0_,
+        professor2_1_.rgprfds as rgprfds39_0_,
+        professor2_1_.fktpcds as fktpcds39_0_ 
+    from
+        tpc_ds tipocontra0_ 
+    left outer join
+        prf_ds professorl1_ 
+            on tipocontra0_.idtpc=professorl1_.fktpcds 
+    left outer join
+        prf professor2_ 
+            on professorl1_.fkprf=professor2_.cdprf 
+    left outer join
+        prf_ds professor2_1_ 
+            on professor2_.cdprf=professor2_1_.fkprf 
+    where
+        tipocontra0_.idtpc=?
+2013-Jul-12 18:58:44,549 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    update
+        cat_ds 
+    set
+        nmcat=? 
+    where
+        cdcat=?
+2013-Jul-12 18:58:44,581 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_ limit ?
+2013-Jul-12 18:58:44,584 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(*) as col_0_0_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:58:44,586 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat40_,
+        categoriap0_.nmcat as nmcat40_ 
+    from
+        cat_ds categoriap0_ limit ?

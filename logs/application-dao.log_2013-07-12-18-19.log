@@ -1,0 +1,106 @@
+2013-Jul-12 18:19:36,717 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(professor0_.cdprf) as col_0_0_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf limit ?
+2013-Jul-12 18:19:36,800 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        categoriap0_.cdcat as cdcat58_,
+        categoriap0_.nmcat as nmcat58_ 
+    from
+        cat_ds categoriap0_
+2013-Jul-12 18:19:36,844 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_
+2013-Jul-12 18:19:36,905 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:19:36,912 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc
+2013-Jul-12 18:19:36,997 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        professor0_.cdprf as cdprf61_,
+        professor0_.pfprf as pfprf61_,
+        professor0_.mtprf as mtprf61_,
+        professor0_.nmprf as nmprf61_,
+        professor0_1_.fkcatds as fkcatds62_,
+        professor0_1_.rgprfds as rgprfds62_,
+        professor0_1_.fktpcds as fktpcds62_ 
+    from
+        prf professor0_ 
+    left outer join
+        prf_ds professor0_1_ 
+            on professor0_.cdprf=professor0_1_.fkprf 
+    order by
+        professor0_.nmprf asc limit ?
+2013-Jul-12 18:19:37,577 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        count(tipocontra0_.idtpc) as col_0_0_ 
+    from
+        tpc_ds tipocontra0_ limit ?
+2013-Jul-12 18:19:37,579 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_
+2013-Jul-12 18:19:37,674 [AWT-EventQueue-0] org.hibernate.SQL 
+  DEBUG 
+    select
+        tipocontra0_.idtpc as idtpc65_,
+        tipocontra0_.nmtpc as nmtpc65_ 
+    from
+        tpc_ds tipocontra0_ limit ?
+2013-Jul-12 18:19:38,126 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$1 para o botão: Atribuição de Aulas
+2013-Jul-12 18:19:38,127 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$2 para o botão: Professor
+2013-Jul-12 18:19:38,127 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$3 para o botão: Categoria Funcional
+2013-Jul-12 18:19:38,127 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.MainController$4 para o botão: Tipo de Contrato
+2013-Jul-12 18:19:38,128 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.LoginController$1 para o botão: Ok
+2013-Jul-12 18:19:38,128 [AWT-EventQueue-0] br.com.etec.controller.AbstractController 
+  DEBUG Registrando action: br.com.etec.controller.LoginController$2 para o botão: Cancelar

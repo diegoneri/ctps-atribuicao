@@ -1,0 +1,38 @@
+2013-Dez-09 19:46:35,018 [AWT-EventQueue-0] org.hibernate.annotations.common.Version 
+  INFO  HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2013-Dez-09 19:46:35,137 [AWT-EventQueue-0] org.hibernate.Version 
+  INFO  HHH000412: Hibernate Core {4.1.6.Final}
+2013-Dez-09 19:46:35,140 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000206: hibernate.properties not found
+2013-Dez-09 19:46:35,143 [AWT-EventQueue-0] org.hibernate.cfg.Environment 
+  INFO  HHH000021: Bytecode provider name : javassist
+2013-Dez-09 19:46:44,999 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2013-Dez-09 19:46:45,027 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000115: Hibernate connection pool size: 20
+2013-Dez-09 19:46:45,027 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000006: Autocommit mode: true
+2013-Dez-09 19:46:45,028 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3307/eteab01]
+2013-Dez-09 19:46:45,028 [AWT-EventQueue-0] org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl 
+  INFO  HHH000046: Connection properties: {user=eteab01, password=****, autocommit=true, release_mode=auto}
+2013-Dez-09 19:46:46,443 [AWT-EventQueue-0] org.hibernate.engine.jdbc.internal.JdbcServicesImpl 
+  WARN  HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2013-Dez-09 19:46:46,480 [AWT-EventQueue-0] org.hibernate.dialect.Dialect 
+  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2013-Dez-09 19:46:46,503 [AWT-EventQueue-0] org.hibernate.engine.jdbc.internal.LobCreatorBuilder 
+  INFO  HHH000422: Disabling contextual LOB creation as connection was null
+2013-Dez-09 19:46:46,519 [AWT-EventQueue-0] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator 
+  INFO  HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2013-Dez-09 19:46:46,533 [AWT-EventQueue-0] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory 
+  INFO  HHH000397: Using ASTQueryTranslatorFactory
+2013-Dez-09 19:46:46,696 [AWT-EventQueue-0] org.hibernate.validator.internal.util.Version 
+  INFO  HV000001: Hibernate Validator 4.3.1.Final
+2013-Dez-09 19:46:49,962 [AWT-EventQueue-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper 
+  WARN  SQL Error: 0, SQLState: 08S01
+2013-Dez-09 19:46:49,962 [AWT-EventQueue-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper 
+  ERROR Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
